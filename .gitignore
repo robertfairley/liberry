@@ -1,0 +1,7 @@
+# Ignore these files
+.DS_Store
+*.o
+*.a
+
+# Ignore any instance of the built executable for now
+liberry
