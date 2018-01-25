@@ -1,4 +1,5 @@
 # Ignore these files
+*.ignore
 .DS_Store
 *.o
 *.a
