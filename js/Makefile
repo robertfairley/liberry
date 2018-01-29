@@ -3,10 +3,11 @@ all: liberry
 liberry: build
 
 build:
+	echo "Building Liberry (TypeScript)"
 	tsc
 
 watch:
 	tsc -w
 
 clean:
-	rm index.js
+	rm -rf dist

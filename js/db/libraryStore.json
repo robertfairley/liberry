@@ -1,0 +1,31 @@
+[
+  {
+    "name": "My Library",
+    "owner": "Lindsay",
+    "lastUpdated": "Sun Jan 28 2018 22:23:52 GMT-0500 (EST)"
+  },
+  {
+    "collection": [
+      {
+        "id": 0,
+        "isbn": 0,
+        "title": "Test Book",
+        "author": "John Smith",
+        "genre": "Philosophy",
+        "synopsis": "This is a test book",
+        "notes": [],
+        "lent": false
+      },
+      {
+        "id": 1,
+        "isbn": 100000000,
+        "title": "Test Book 2",
+        "author": "John Doe",
+        "genre": "Romance",
+        "synopsis": "This is another entry.",
+        "notes": [],
+        "lent": false
+      }
+    ]
+  }
+]

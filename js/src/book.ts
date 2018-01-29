@@ -1,7 +1,7 @@
 import { IBook } from './model/book'
-import { Book } from './types'
+import { TBook, TBookTypes } from './types'
 
-class Book implements IBook
+export class Book implements IBook
 {
   id       = 0;
   isbn     = 0;
@@ -12,7 +12,7 @@ class Book implements IBook
   notes    = [];
   lent     = false;
 
-  setISBN ( isbn : Book.isbn, cb? : any ) : boolean
+  setISBN ( isbn : TBookTypes.isbn, cb? : any ) : boolean
   {
     if ( !isbn ) {
       if ( cb )
@@ -32,7 +32,7 @@ class Book implements IBook
     return true;
   }
 
-  setLentStatus ( val : boolean, cb? : any ) : boolean
+  setLentStatus ( val : TBookTypes.lent, cb? : any ) : boolean
   {
     if ( !val ) {
       if ( cb )
@@ -48,7 +48,7 @@ class Book implements IBook
     return true;
   }
 
-  setTitle ( title : Book.title, cb? : any ) : boolean
+  setTitle ( title : TBookTypes.title, cb? : any ) : boolean
   {
     if ( !title ) {
       if ( cb )
@@ -64,7 +64,7 @@ class Book implements IBook
     return true;
   }
 
-  setAuthor ( author : Book.author, cb? : any ) : boolean
+  setAuthor ( author : TBookTypes.author, cb? : any ) : boolean
   {
     if ( !author ) {
       if ( cb )

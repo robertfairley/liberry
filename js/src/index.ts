@@ -1,8 +1,6 @@
-function main () : void
-{
-  let greeting : string = 'hello, world!\n';
+import Library from './library'
 
-  console.log(greeting);
-}
+export let l = new Library({
+  storeFile: '/../db/libraryStore.json',
+});
 
-main();

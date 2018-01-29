@@ -1,14 +1,13 @@
-import { Book } from '../types'
+import { TBookTypes } from '../types'
 
 export interface IBook
 {
-  id       : Book.id       | null;
-  isbn     : Book.isbn     | null;
-  title    : Book.title    | null;
-  author   : Book.author   | null;
-  genre    : Book.genre    | null;
-  synopsis : Book.synopsis | null;
-  notes    : Book.notes    | null;
-  lent     : Book.lent     | null;
+  id       : TBookTypes.id       | null;
+  isbn     : TBookTypes.isbn     | null;
+  title    : TBookTypes.title    | null;
+  author   : TBookTypes.author   | null;
+  genre    : TBookTypes.genre    | null;
+  synopsis : TBookTypes.synopsis | null;
+  notes    : TBookTypes.notes    | null;
+  lent     : TBookTypes.lent     | null;
 }
-

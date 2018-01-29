@@ -1,6 +1,6 @@
 export type JSON = object[];
 
-export namespace Book
+export namespace TBookTypes
 {
   export type id       = number;
   export type isbn     = number;
@@ -11,3 +11,24 @@ export namespace Book
   export type notes    = JSON;
   export type lent     = boolean;
 }
+
+export type TBook = {
+  id       : TBookTypes.id,
+  isbn     : TBookTypes.isbn,
+  title    : TBookTypes.title,
+  author   : TBookTypes.author,
+  genre    : TBookTypes.genre,
+  synopsis : TBookTypes.synopsis,
+  notes    : TBookTypes.notes,
+  lent     : TBookTypes.lent,
+}
+
+export type TMetadata = {
+  name        : string;
+  owner       : string;
+  lastUpdated : string;
+};
+
+export type TLibraryStore      = object[];
+export type TLibraryMetadata   = TMetadata;
+export type TLibraryCollection = TBook[];
