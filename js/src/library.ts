@@ -112,6 +112,10 @@ export default class Library implements ILibrary
     let status    : boolean = false;
     let writeData : string  = JSON.stringify(this.store, null, 2);
 
+    this.metadata["lastUpdated"] = `${new Date()}`;
+    
+    this.store[0] = this.metadata;
+
     fs.writeFile(
       this.database, 
       writeData, //data

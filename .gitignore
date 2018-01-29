@@ -8,4 +8,6 @@
 liberry
 
 # Ignore the built TypeScript/JavaScript files
-/ts/dist/
+/js/dist/
+/js/db/libraryStore.json
+
