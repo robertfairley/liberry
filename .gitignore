@@ -6,3 +6,6 @@
 
 # Ignore any instance of the built executable for now
 liberry
+
+# Ignore the built TypeScript/JavaScript files
+/ts/dist/
